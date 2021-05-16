@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html >
+    <head>
+        <title>Antal Adrienn - Tömbök - kutyás feladat</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="szerkezet.css" rel="stylesheet" type="text/css"/>        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="kutyak.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+        <main>
+            <header>Kutyák</header>
+            <article>
+            </article>
+            <section>
+                <form >
+                <fieldset>
+                    <legend> Add meg a kutyus adatait:</legend>
+                
+                    <div>
+                        
+                        
+                         <label for="nev">Név:</label>
+                        <input type="text" name="nev" id="nev" required placeholder="pl. Kerti Virág">
+
+                        <label for="kor">Kor:</label>
+                        <input type="number" id="kor" name="kor"  required placeholder="pl.5">
+
+                        <label for="fajta">Fajta:</label>
+                        <input type="text" id="fajta" name="fajta" required placeholder="pl.Boxer">
+
+                        <label for="gazdi_neve">Gazdi neve:</label>
+                        <input type="text" name="gazdi_neve" id="gazdi_neve" required placeholder="pl. Kiss Krisztina">
+                        
+                         <label for="lakhely">Lakhely:</label>
+                        <input type="text" name="lakhely" id="lakhely" required placeholder="pl. Budapest">
+
+                        <label for="nem">Kan</label>
+                        <input type="radio" name="nem" id="kan" value="kan">
+                        <label for="nem">Nőstény</label>
+                        <input type="radio" name="nem" id="nőstény" value="nőstény">
+
+                        <input type="button" id ="kuld" value="OK">
+                        
+                       
+                    </div>
+
+                </form>
+                       
+                     </fieldset>
+
+            </section>
+
+
+
+            <footer>Készítette: Antal Adrienn</footer>
+        </main>
+
+
+    </body>
+</html>

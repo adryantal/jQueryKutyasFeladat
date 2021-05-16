@@ -1,0 +1,93 @@
+@charset "utf-8";
+ 
+main, header, footer, article 
+{border:1px solid gray;
+padding:5px;
+border-radius: 4px;
+
+}
+
+body {
+    background: beige;
+    font-family: "Calibri",courier;
+     border-radius: 4px;
+}
+
+main {
+    max-width:600px;
+    margin: auto;
+    box-shadow: 1px 2px 5px lightgray;
+}
+
+form div{
+    display:grid;
+    grid-template-columns: 100px auto;
+   
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, td, th {
+    border: 0.5px solid grey;
+    
+}
+
+
+th {
+    background: lightblue;
+}
+
+tr:nth-child(even){
+    background: lightgreen;
+}
+    
+tr:nth-child(odd){
+    background: beige; 
+} 
+
+label{
+    text-align: right;
+     padding-right: 10px;
+   
+}
+label, input[type=text], input[type=number], input[type=button]{
+    margin: 3px;
+}
+
+input[type=radio]{    
+    align-self: center;
+   
+}
+
+.kiemel{
+   background: lemonchiffon;
+   cursor: grab;
+}
+
+footer, header{
+    text-align: center;
+    background: bisque;
+}
+
+header, footer{    
+    text-align: center;
+}
+
+header{
+    font-weight: bold;
+    font-size: 150%;
+}
+
+fieldset{
+    border-radius: 4px;
+}
+
+legend{
+    background : bisque;
+    border: 0.5px solid grey;
+    border-radius: 4px;
+    padding: 3px;
+}
