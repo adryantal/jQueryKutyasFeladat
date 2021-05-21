@@ -1,16 +1,16 @@
 @charset "utf-8";
- 
-main, header, footer, article 
-{border:1px solid gray;
-padding:5px;
-border-radius: 4px;
+
+main, header, footer, article{
+    border:1px solid gray;
+    padding:5px;
+    border-radius: 4px;
 
 }
 
 body {
     background: beige;
     font-family: "Calibri",courier;
-     border-radius: 4px;
+    border-radius: 4px;
 }
 
 main {
@@ -22,7 +22,7 @@ main {
 form div{
     display:grid;
     grid-template-columns: 100px auto;
-   
+
 }
 
 table {
@@ -33,6 +33,7 @@ table {
 table, td, th {
     border: 0.5px solid grey;
     
+
 }
 
 
@@ -43,15 +44,15 @@ th {
 tr:nth-child(even){
     background: lightgreen;
 }
-    
+
 tr:nth-child(odd){
     background: beige; 
 } 
 
 label{
     text-align: right;
-     padding-right: 10px;
-   
+    padding-right: 10px;
+
 }
 label, input[type=text], input[type=number], input[type=button]{
     margin: 3px;
@@ -59,12 +60,12 @@ label, input[type=text], input[type=number], input[type=button]{
 
 input[type=radio]{    
     align-self: center;
-   
+
 }
 
 .kiemel{
-   background: lemonchiffon;
-   cursor: grab;
+    background: lemonchiffon;
+    cursor: grab;
 }
 
 footer, header{

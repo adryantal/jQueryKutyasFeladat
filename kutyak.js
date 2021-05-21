@@ -57,9 +57,8 @@ function kutyaNeme() {
         return "nőstény";
     else
         return "Nincs információ";
-
-
 }
+
 
 function valid() {
       
@@ -100,7 +99,7 @@ function valid() {
 
 function formKiurit() {
     $('input:text').val('');      
-   $("input[type='number']").val('');  
+    $("input[type='number']").val('');  
    //ha simán $('input').val('') - t alkalmazok, hogy minden kitöltött mező értékét töröljem, akkor utána a radio button értékét nem olvassa be az új rekordadatok megadásakor... 
 }
 
@@ -114,7 +113,7 @@ function UjRekordBeszur() {
         Gazdi_neve: $("#gazdi_neve").val(),
         Lakhely: $("#lakhely").val()
     };
-    console.log("Kutya neme: "+$("input[name='nem']:checked").val());
+//    console.log("Kutya neme: "+$("input[name='nem']:checked").val());
     if (valid()) {
         kutyak.push(kutyaObjektum);
 //    console.log(kutyaObjektum);
@@ -128,10 +127,10 @@ function UjRekordBeszur() {
 
 
 function tablazatFejlecKiir(tomb) {
-
+     /*Fejléc beszúrása a táblázatba*/
     $("article table").append("<tr></tr>");
     for (var item in tomb[0]) {
-        var item_corr = item.replace("_", " ");
+        var item_corr = item.replace("_", " "); //ha több szóból áll egy fejléc, és _ a szeparátor, akkor kiíráskor szedje ki a szeparátort
         $("article table tr").append("<th id='" + item + "'>" + item_corr + "</th>");
     }
 }
@@ -153,8 +152,8 @@ function tablazatSorokKiir(tomb) {
 
 function tablazatbaKiir() {   
    
-    $("article").empty();
-    $("article").append("<table></table>");
+    $("article").empty(); //tartalom ürítése
+    $("article").append("<table></table>"); //üres table tag
 
     tablazatFejlecKiir(kutyak);
     tablazatSorokKiir(kutyak);
@@ -182,8 +181,9 @@ function rendez() {
                     function (a, b) {
                         console.log(a[mezo]);
                         return b[mezo] - a[mezo];
-                    });
-            console.log("aktuális objektum: " + JSON.stringify(kutyak));
+                    }
+                            );
+            console.log("aktuális elrend.: " + JSON.stringify(kutyak)); //egy stringgé akaítjuk a tömböt, különben csak Objectként lenne rá hivatkozás
         }
     } else {
         if (novekvo) {
@@ -193,7 +193,7 @@ function rendez() {
                         return Number(a[mezo] > b[mezo]) - 0.5;
                     }
             );
-            console.log("aktuális objektum: " + JSON.stringify(kutyak));
+            console.log("aktuális elrend.: " + JSON.stringify(kutyak));
         } else {
 
             kutyak.sort(
